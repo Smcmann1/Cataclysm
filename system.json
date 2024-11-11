@@ -1,0 +1,55 @@
+{
+  "id": "cataclysm",
+  "title": "Cataclysm",
+  "description": "The Foundry VTT module for Catalcylsm the RPG of feline proportions",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": 12,
+    "verified": 12
+  },
+  "authors": [{
+    "name": "Sercaoch",
+    "url": "https://github.com/Smcmann1/cataclysm/new/main",
+    "discord": "Sercoach"
+  }],
+  "esmodules": ["mysystem.mjs"],
+  "styles": ["styles/system-styles.css"],
+  "packs": [{
+    "name": "monsters",
+    "label": "My Monsters",
+    "type": "Actor"
+  },
+  {
+    "name": "items",
+    "label": "My Items",
+    "type": "Item"
+  }],
+  "languages": [{
+    "lang": "en",
+    "name": "English",
+    "path": "lang/en.json"
+  }],
+  "documentTypes": {
+    "Actor": {
+      "hero": { "htmlFields": ["background.biography"] },
+      "boss": { "htmlFields": ["background.biography"] },
+      "epic boss": { "htmlFields": ["background.biography"] },
+      "pawn": {}
+    },
+    "Item": {
+      "weapon": {},
+      "spell": {}
+    }
+  },
+  "socket": false,
+  "initiative": "1d10-1",
+  "grid": {
+    "distance": 3,
+    "units": "ft"
+  },
+  "primaryTokenAttribute": "resources.stress",
+  "secondaryTokenAttribute": "resources.lives",
+  "url": "https://github.com/Smcmann1/cataclysm/",
+  "manifest": "https://github.com/Smcmann1/cataclysm/master/system.json",
+  "download": "https://github.com/Smcmann1/cataclysm/releases/download/release-1.0.0/dnd5e-release-1.0.0.zip"
+}
